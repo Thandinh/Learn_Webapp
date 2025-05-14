@@ -4,7 +4,7 @@
          version="5.0">
     <servlet>
         <servlet-name>WelcomeServlet</servlet-name>
-        <servlet-class>com.example.bai4.WelcomeServlet</servlet-class>
+        <servlet-class>com.example.bai04.WelcomeServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
