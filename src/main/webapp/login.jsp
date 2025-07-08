@@ -43,8 +43,7 @@
                     <span class="form-message"></span>
                 </div>
 
-
-                <button class="form-submit">Đăng ký</button>
+                <button class="form-submit">Đăng nhập</button>
             </form>
         </div>
     </div>

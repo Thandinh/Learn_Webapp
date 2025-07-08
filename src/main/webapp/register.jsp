@@ -66,7 +66,6 @@
         </c:if>
 
 
-
         let form = new Validator('#register-form');
 
 

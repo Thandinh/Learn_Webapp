@@ -2,6 +2,9 @@
   <library name="jakarta.servlet.jsp.jstl-3.0.1">
     <CLASSES>
       <root url="jar://$USER_HOME$/OneDrive - phuxuan.edu.vn/Desktop/jakarta.servlet.jsp.jstl-3.0.1.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive - phuxuan.edu.vn/Desktop/jakarta.servlet.jsp.jstl-api-3.0.2.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive - phuxuan.edu.vn/Desktop/jakarta.servlet-api-6.1.0.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive - phuxuan.edu.vn/Desktop/jbcrypt-0.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
