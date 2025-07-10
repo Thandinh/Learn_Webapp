@@ -84,10 +84,10 @@
 
                     <div class="button-cart">
                         <button onclick="window.location.href='san-pham'">Tiếp tục mua hàng</button>
-                        <button>Tiến hành thanh toán</button>
+                        <button onclick="window.location.href='dat-hang'">Tiến hành thanh toán</button>
                     </div>
                 </div>
-
+            
             </div>
         </div>
     </div>
@@ -97,7 +97,11 @@
     <%@include file="./inc/footer.jsp" %>
 
     <script>
-         function changeQuantity(action, form) {
+        <c:if test="${not empty sessionScope.CheckoutSuccess}">
+            alert("${sessionScope.CheckoutSuccess}");
+            <c:remove var="CheckoutSuccess" scope="session" />
+        </c:if>
+        function changeQuantity(action, form) {
             form.querySelector('input[name="typeChange"]').value = action;
             form.submit();
         }

@@ -31,7 +31,7 @@ public class OrderItemDAO implements IOrderItemDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            // Consider throwing a custom exception or logging for better error handling
+
         }
         return generatedId;
     }

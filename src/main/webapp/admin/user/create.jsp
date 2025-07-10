@@ -41,7 +41,8 @@
                             </div>
                             <div class="card-body">
                                 <div class="basic-form">
-                                    <form action="<c:url value='admin-create-user' />" method="post">
+                                    <form action="<c:url value='admin-user' />" method="post">
+                                        <input type="hidden" name="action" value="create">
                                         <div class="form-group">
                                             <label>Email: </label>
                                             <input type="email"

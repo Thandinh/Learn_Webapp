@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <a href="<c:url value='admin-users' />"><i style="font-size: 20px; padding: 15px;" class="fa-solid fa-arrow-left"></i></a>
+                            <a href="<c:url value='admin-user?action=index ' />"><i style="font-size: 20px; padding: 15px;" class="fa-solid fa-arrow-left"></i></a>
                          
 
                             <div class="card-header">
@@ -45,7 +45,8 @@
                             <div class="card-body">
                                 
                                 <div class="basic-form">
-                                   <form action="<c:url value='admin-edit-user' />" method="post">
+                                   <form action="<c:url value='admin-user' />" method="post">
+                                        <input type="hidden" name="action" value="edit">
                                         <input type="hidden" name="avatar" value="${user.avatar}">
                                         <div class="form-group">
                                             <label>Email: </label>

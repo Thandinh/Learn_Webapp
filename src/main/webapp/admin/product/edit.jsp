@@ -34,14 +34,15 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <a href="<c:url value='admin-product' />"><i style="font-size: 20px; padding: 15px;" class="fa-solid fa-arrow-left"></i></a>
+                            <a href="<c:url value='admin-product?action=index' />"><i style="font-size: 20px; padding: 15px;" class="fa-solid fa-arrow-left"></i></a>
 
                             <div class="card-header">
                                 <h4 class="card-title">Edit Product</h4>
                             </div>
                             <div class="card-body">
                                 <div class="basic-form">
-                                    <form action="<c:url value='admin-edit-product' />" method="post" enctype="multipart/form-data">
+                                    <form action="<c:url value='admin-product' />" method="post" enctype="multipart/form-data">
+                                        <input type="hidden" name="action" value="edit">
                                         <input type="hidden" name="id" value="${product.id}">
                                         <input type="hidden" name="oldThumbnail" value="${product.thumbnail}">
 

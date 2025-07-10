@@ -1,4 +1,4 @@
-package com.webfruits.controller.admin.category;
+package com.webfruits.controller.admin;
 
 import com.webfruits.model.CategoryModel;
 import com.webfruits.service.CategoryService;

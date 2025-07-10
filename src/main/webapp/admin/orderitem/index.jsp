@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <a href="<c:url value='admin-order' />"><i style="font-size: 20px; padding: 15px;" class="fa-solid fa-arrow-left"></i></a>
+                            <a href="<c:url value='admin-order?action=index' />"><i style="font-size: 20px; padding: 15px;" class="fa-solid fa-arrow-left"></i></a>
                             <div class="card-header">
                                 <h4 class="card-title">About Order: <b style="color: #593bdb;"><i>${code}</i></b></h4>
                             </div>

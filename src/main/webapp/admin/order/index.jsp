@@ -63,12 +63,13 @@
                                                         <c:if test="${order.status == 'processing'}"><span class="badge badge-info">${order.status}</span></c:if>
                                                         <c:if test="${order.status == 'cancelled'}"><span class="badge badge-danger">${order.status}</span></c:if>
                                                         <div style="margin: 0 2px;"></div>
-                                                        <a href="<c:url value='admin-edit-order?orderId=${order.id}' />" style="font-size: 12px;">edit</a>
+                                                        <a href="<c:url value='admin-order?action=edit&orderId=${order.id}' />" style="font-size: 12px;">edit</a>
                                                         
                                                     </td>
                                                     <td style="color: black;">${order.createdAt}</td>
                                                     <td>
-                                                        <form action="<c:url value='admin-detail-order' />" method="get">
+                                                        <form action="<c:url value='admin-order ' />" method="get">
+                                                            <input type="hidden" name="action" value="detail">
                                                             <input type="hidden" name="orderId" value="${order.id}">
                                                             <input type="hidden" name="code" value="${order.code}">
                                                             <button type="submit" style="border: none;" class="badge badge-dark">Detail</button>

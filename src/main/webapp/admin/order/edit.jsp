@@ -41,7 +41,8 @@
                             <div class="card-body">
                                
                                 <div class="basic-form">
-                                    <form action="<c:url value='admin-edit-order' />" method="post">
+                                    <form action="<c:url value='admin-order' />" method="post">
+                                        <input type="hidden" name="action" value="editStatus">
                                         
                                         <div class="form-group">
                                             <label>Status: </label>

@@ -66,14 +66,16 @@
                                                     </td>
                                                     <td style="color: black;">${product.quantity}</td>
                                                     <td>
-                                                        <form action="<c:url value='admin-edit-product' />" method="get">
+                                                        <form action="<c:url value='admin-product ' />" method="get">
+                                                            <input type="hidden" name="action" value="edit">
                                                             <input type="hidden" name="productId" value="${product.id}">
                                                             <button type="submit" style="border: none;" class="badge badge-dark">Edit</button>
                                                         </form>
                                                     </td>
                                                     <td>
-                                                        <form action="<c:url value='admin-delete-product' />" method="post">
+                                                        <form action="<c:url value='admin-product' />" method="post">
                                                             <input type="hidden" name="productId" value="${product.id}">
+                                                            <input type="hidden" name="action" value="delete">
                                                             <button type="submit" style="border: none;" class="badge badge-danger">Delete</button>
                                                         </form>    
                                                     </td>

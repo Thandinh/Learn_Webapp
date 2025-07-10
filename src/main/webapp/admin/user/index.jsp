@@ -77,13 +77,15 @@
                                                     </td>
                                                     <td style="color: black;"><span>${user.createdAt}</span></td>
                                                     <td>
-                                                        <form action="<c:url value='admin-edit-user' />" method="get">
+                                                        <form action="<c:url value='admin-user' />" method="get">
+                                                            <input type="hidden" name="action" value="edit">
                                                             <input type="hidden" name="userId" value="${user.id}">
                                                             <button type="submit" style="border: none;" class="badge badge-dark">Edit</button>
                                                         </form>
                                                     </td>
                                                     <td>
-                                                        <form action="<c:url value='admin-delete-user' />" method="post">
+                                                        <form action="<c:url value='admin-user' />" method="post">
+                                                             <input type="hidden" name="action" value="delete">
                                                             <input type="hidden" name="userId" value="${user.id}">
                                                             <button type="submit" style="border: none;" class="badge badge-danger">Delete</button>
                                                         </form>    

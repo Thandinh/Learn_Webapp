@@ -112,11 +112,13 @@
                 <p><strong>Vai trò:</strong> ${user.role}</p>
             </div>
 
-            <c:if test="${not empty error}">
-                <p style="color:red; text-align:center">${error}</p>
+            <c:if test="${not empty sessionScope.error}">
+                <p style="color:red; text-align:center">${sessionScope.error}</p>
+                <c:remove var="error" scope="session" />
             </c:if>
-            <c:if test="${not empty success}">
-                <p style="color:green; text-align:center">${success}</p>
+            <c:if test="${not empty sessionScope.success}">
+                <p style="color:green; text-align:center">${sessionScope.success}</p>
+                <c:remove var="success" scope="session" />
             </c:if>
 
             <hr>

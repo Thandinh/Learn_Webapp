@@ -4,10 +4,16 @@ import com.webfruits.dao.IOrderDAO;
 import com.webfruits.dao.OrderDAO;
 import com.webfruits.model.OrderModel;
 
+import java.util.Date;
 import java.util.List;
 
 public class OrderService implements IOrderService{
     private IOrderDAO orderDAO = new OrderDAO();
+
+    @Override
+    public int insert(OrderModel orderModel) {
+        return orderDAO.insert(orderModel);
+    }
 
     @Override
     public List<OrderModel> findAll() {
@@ -22,5 +28,10 @@ public class OrderService implements IOrderService{
     @Override
     public boolean updateStatus(int orderId, String newStatus) {
         return orderDAO.updateStatus(orderId, newStatus);
+    }
+
+    @Override
+    public int countOrdersByDate(Date createdAt) {
+        return orderDAO.countOrdersByDate(createdAt);
     }
 }
